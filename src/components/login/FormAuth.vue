@@ -37,7 +37,7 @@
                 variant="outlined"
                 @click:append-inner="togglePasswordVisibility"
               ></v-text-field>
-              <v-btn type="submit" color="primary" class="mt-4 rounded-xl" block>Ingresar</v-btn>
+              <v-btn type="submit" color="yellow" class="mt-4 rounded-xl" block>Ingresar</v-btn>
             </v-form>
           </v-card-text>
         </v-card>

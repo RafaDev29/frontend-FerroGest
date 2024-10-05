@@ -13,14 +13,6 @@ const router = createRouter({
             component: () => import("@/layouts/MasterLayout.vue"),
             children: [
               
-             
-
-                // {
-                //     name: "visitas",
-                //     path: "visitas",
-                //     component: () => import("@/views/VisitasView.vue"),
-                // }
-                
                 
        
             ]
@@ -67,7 +59,7 @@ router.beforeEach((to, from, next) => {
             next();
         }
     } else {
-        // Si no hay ninguna condición que lo bloquee, permitir el acceso a la ruta solicitada
+       
         next();
     }
 });
