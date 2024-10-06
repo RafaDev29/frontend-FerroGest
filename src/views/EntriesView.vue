@@ -3,24 +3,24 @@
       <v-row class="py-6">
         <v-col>
           <div class="d-flex justify-space-between align-center">
-            <h1 class="text-h4 font-weight-bold">Gestión de Proveedores</h1>
+            <h1 class="text-h4 font-weight-bold">Gestión de Entradas de Almacén</h1>
             <v-btn color="orange" @click="showCreateDialog = true">
-              Crear +
+              Crear Entrada
             </v-btn>
           </div>
-          <SuppliersTable />
+          <EntriesTable />
         </v-col>
       </v-row>
   
-      
-      <CreateSupplierDialog v-model:visible="showCreateDialog" />
+      <!-- Componente de formulario para crear una entrada -->
+      <CreateEntryDialog v-model:visible="showCreateDialog" />
     </v-container>
   </template>
   
   <script setup>
   import { ref } from 'vue';
-  import SuppliersTable from '@/components/suppliers/SuppliersTable.vue';
-  import CreateSupplierDialog from '@/components/suppliers/CreateSupplierDialog.vue';
+  import EntriesTable from '@/components/entries/EntriesTable.vue';
+  import CreateEntryDialog from '@/components/entries/CreateEntryDialog.vue';
   
   const showCreateDialog = ref(false);
   </script>
