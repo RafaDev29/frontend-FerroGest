@@ -4,7 +4,7 @@
         <v-col>
           <div class="d-flex justify-space-between align-center">
             <h1 class="text-h4 font-weight-bold">Gestión de Productos</h1>
-            <v-btn color="primary" @click="showCreateDialog = true">
+            <v-btn color="orange" @click="showCreateDialog = true">
               Crear +
             </v-btn>
           </div>

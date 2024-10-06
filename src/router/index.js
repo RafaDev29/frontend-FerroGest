@@ -17,6 +17,11 @@ const router = createRouter({
                     path: "/products",
                     component: () => import("@/views/ProductView.vue"),
                 },
+                {
+                    name: "category",
+                    path: "/category",
+                    component: () => import("@/views/CategoryView.vue"),
+                },
                 
        
             ]
@@ -48,7 +53,7 @@ router.beforeEach((to, from, next) => {
         // Si el usuario ya está autenticado y trata de acceder al login, redirigir según su rol
         if (store.state.role === "administrador") {
             next({ name: 'products' });
-            console.log("==============>",store.state.role)
+           
         } else if (store.state.role === "administrator") {
 
             next({ name: '' });

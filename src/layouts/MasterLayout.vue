@@ -97,16 +97,38 @@ export default {
         const ItemsNavegation = ref([
             {
                 icon: "mdi mdi-toolbox",
-                title: "products",
+                title: "Productos",
                 value: "products",
                 to: "/products",
                 children: []
             },
             {
-                icon: "mdi mdi-home-edit",
-                title: "Lista de actividades",
-                value: "home",
-                to: "/home",
+                icon: "mdi mdi-text-box-check-outline",
+                title: "Categoria de productos",
+                value: "category",
+                to: "/category",
+                children: []
+            },
+         
+            {
+                icon: "mdi mdi-account-box-multiple",
+                title: "Proveedores",
+                value: "suppliers",
+                to: "/suppliers",
+                children: []
+            },
+            {
+                icon: "mdi mdi-open-in-app",
+                title: "Entradas a almacén",
+                value: "entries",
+                to: "/entries",
+                children: []
+            },
+            {
+                icon: "mdi-export",
+                title: "Salidas de almacén",
+                value: "outputs",
+                to: "/outputs",
                 children: []
             },
         ]);
@@ -136,7 +158,7 @@ export default {
 
         const filteredItems = computed(() => {
             if (store.state.role === 'administrator') {
-                return ItemsNavegation.value.filter(item => item.value === 'products');
+                return ItemsNavegation.value.filter(item => item.value === 'products' || item.value==='category' || item.value==='entries' || item.value=='suppliers' || item.value==='outputs');
             } else if (store.state.role === 'vendedor') {
                 return ItemsNavegation.value.filter(item => item.value === 'products');
             } else {

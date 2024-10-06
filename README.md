@@ -28,4 +28,5 @@ Para más detalles, consulta la [Referencia de Configuración](https://cli.vuejs
 
 ---
 
-He mantenido los logos y las tecnologías utilizadas para reflejar que se está usando Vue 3 y Vuetify.
+## mockup de la plataforma
+<img src="./src/assets/README/imagen.png" alt="rafadev" style="width: 100%; height: auto;">
