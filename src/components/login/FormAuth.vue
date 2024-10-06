@@ -71,8 +71,8 @@ export default {
 
     const validateLogin = () => {
       const data = {
-        nombre_usuario: username.value,
-        contrasena: password.value
+        username: username.value,
+        password: password.value
       };
       emit('validate-login', data);
     };
