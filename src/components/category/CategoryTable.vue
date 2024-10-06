@@ -1,6 +1,6 @@
 <template>
     <v-card class="my-6">
-      <v-card-title class="text-h6">Lista de Categorías</v-card-title>
+
   
       <!-- Campo de búsqueda -->
       <v-text-field
